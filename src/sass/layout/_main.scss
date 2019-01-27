@@ -1,0 +1,140 @@
+#wrapper {
+	min-width: 320px;
+	overflow: hidden;
+}
+
+h1,h2, h4 {
+		margin-bottom: 0;
+	}
+
+.btn {
+	color: $white;
+	
+	&:hover {
+		color: darken($white, 20%);
+	}
+}
+
+.custom-checkmark {
+	position: relative;
+
+	&:before {
+		font-family: 'icomoon';
+		display: block;
+		content: "\e90b";
+		position: absolute;
+		top: -2%;
+    	color: $green;
+    	font-size: 25px;
+    	left: -14px;	
+	}
+}
+
+.custom-decor-star {
+	position: relative;
+	
+	&:after {
+		font-family: 'icomoon';
+		display: block;
+		content: "\e906";
+		position: absolute;
+		top: 21%;
+    	right: 5px;
+    	color: $orange;
+    	font-size: 9px;
+	}
+}
+
+.empty {
+		color: lighten($orange, 30%);
+}
+
+main {
+	background-position: center center;
+	background-repeat: no-repeat;
+	padding: 70px 0 40px;
+}
+
+.custom-dropdown-arrow {
+		padding-right: 60px;
+		
+		&:after {
+			display: none;
+		}
+
+		&:before {
+			content:"";
+			display: block;
+			width: 12px;
+			height: 11px;
+			border-left: 3px solid ;
+			border-bottom: 3px solid;
+			border-color: $white;
+			background-color: transparent;
+			position: absolute;
+			transform: rotate(-45deg);
+		}
+	}
+
+.settings-dropdown {
+	position: absolute;
+	top: -33px;
+	left: 15px;
+
+	&>.btn-group {
+		flex-basis: 350px;
+	}
+
+	.btn-border-top-left {
+		border-top-left-radius: 10px;
+	}
+
+	.btn-border-top-right {
+		border-top-right-radius: 10px;
+	}
+
+	.settings-btn{
+		flex-grow: 1;
+	}
+	
+	.custom-dropdown-arrow {
+
+		&:before {
+			right: 20px;
+			top: 9px;
+		}
+	}
+
+	.dropdown-menu{
+		
+		a:hover{
+			background-color: darken($gray, 7%);
+		}
+	}
+}
+
+.selected-hotel-header{
+	flex-wrap: wrap;
+	border: 1px solid #ccc;
+	padding: 15px 20px;
+	border-radius: 12px;
+	position: relative;
+	background: #f6f6f6;
+	border-top-left-radius: 0px;
+	border-top: 6px solid $gray;
+}
+
+.number{
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.hotel-available {
+	
+	p{
+		margin: 0;
+		font-weight: bold;
+	}
+}
+
+

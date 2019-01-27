@@ -1,0 +1,90 @@
+
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$card-header-bb-color: #f9f9f9;
+$white: #fff;
+$black: #2e2f35;    //heder nav color
+$green: #79c55f;;   //success color
+$orange: #f58220;   //primary color
+$light: #a5a5a5; //placeholder
+$gray: #58585a; //text and other
+$gray-900: #2a2b31; //navbar bg color
+$gray-400: #c4c4c4; //card border
+
+$success: $green;
+$primary: $orange;
+$secondary: $gray;
+
+
+$theme-colors: map-merge(
+  $theme-colors,
+  (
+    "primary": $primary,
+    "success":    $success,
+    "secondary":  $secondary   
+  )
+);
+
+
+// Customize the light and dark text colors for use in our YIQ color contrast function.
+$yiq-text-dark: $gray;
+
+
+$body-color: $secondary;
+
+$font-size-base: 0.82rem;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                $secondary;
+$link-hover-color:          darken($link-color, 40%);
+$link-hover-decoration:     none;
+
+
+
+$navbar-brand-padding-y: 0;
+//$navbar-dark-hover-color: ;
+//$navbar-dark-active-color: ;
+$navbar-light-hover-color: $primary;
+$navbar-light-color: $white;
+$navbar-light-active-color: $primary;
+$navbar-light-toggler-border-color: $secondary;
+
+
+$dropdown-link-color: $white;
+$dropdown-link-hover-color: darken($white, 15%);
+$dropdown-link-hover-bg: none;
+
+
+
+// Dropdown menu container and contents.
+
+$dropdown-min-width: 8rem;
+
+$btn-border-radius: .1rem;
+$btn-focus-width: none;
+$btn-focus-box-shadow: none;
+
+$input-color: $secondary;
+//$input-focus-border-color: darken($secondary, 25%);
+$input-focus-box-shadow: darken($secondary, 25%);
+$input-placeholder-color: $light;
+$input-border-radius: 0px;
+
+$headings-font-weight:700;
+
+$h2-font-size: 23px;
+$h3-font-size: 16px;
+$h4-font-size: 15px;
+$h5-font-size: 14px;
+
+
+
+$enable-shadows: true;
+
+
+$card-border-color: $gray-400;
+
